@@ -1,13 +1,13 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
-<h3>Add new task</h3>
+<h3>Creating a new task</h3>
 <a href="{% url 'tasks' %}">Back</a>
 
 <form method="post" action="">
    {% csrf_token %}
    {{form.as_p}}
-   <input type = "submit" value = "OK">
+   <input type = "submit" class = "button" value = "OK">
 
 </form>
 

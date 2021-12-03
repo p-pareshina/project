@@ -4,7 +4,7 @@
 <div class="header-bar">
   <div>
     <h1>Hello, {{request.user|title}}!</h1>
-    <h3 style="margin:0;">You haven't done {{count}} task{{ count|pluralize:"s"}}</h3>
+    <h3 style="margin:0;">You have {{count}} undone task{{ count|pluralize:"s"}}</h3>
   </div>
 
     {% if request.user.is_authenticated %}
@@ -18,7 +18,7 @@
 
 
 <div>
-  <a id = "add-link" href = "{% url 'task-create' %}">Add new task+</a>
+  <a id = "add-link" href = "{% url 'task-create' %}">Add new task +</a>
 </div>
 
 
