@@ -30,7 +30,7 @@
        {% csrf_token %}
        {% task.title %}
        {% task.description %}
-    
+       {% task.complete %}
       
         {% if task.complete %}
         <div class = "task-title">
